@@ -101,3 +101,4 @@ Route::resource('parameter_nomor', App\Http\Controllers\ParameterNomorController
 Route::resource('koreksi_simpanan', App\Http\Controllers\KoreksiDataController::class);
 Route::resource('koreksi_tabungan', App\Http\Controllers\KoreksiTabunganController::class);
 Route::resource('koreksi_kredit', App\Http\Controllers\KoreksiKreditController::class);
+Route::resource('koreksi_bukubesar', App\Http\Controllers\KoreksiBukuBesarController::class);

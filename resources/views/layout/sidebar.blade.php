@@ -495,6 +495,18 @@
                   <p>Koreksi Kredit</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="koreksi_bukubesar" class="nav-link">
+
+                  <p>Koreksi Buku Besar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="koreksi_transaksi" class="nav-link">
+
+                  <p>Koreksi Transaksi Gabungan (Harian) </p>
+                </a>
+              </li>
             </ul>
           </li>
         </ul>
