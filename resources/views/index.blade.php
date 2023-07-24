@@ -115,7 +115,7 @@
                                                     </div>
                                                    <div class="col text-right">
                                                     <div style="font-size: 1.5em;">6.873.000</div>
-                                                    <div  style="font-size: 0.7em;">Nominal Pendfataran Tabungan</div>
+                                                    <div  style="font-size: 1.1em;">Pendaftaran Tabungan</div>
                                                    </div>
                                                 </div>
                                             </div>
@@ -180,9 +180,6 @@
                                                     <div class="col">
                                                         <canvas id="myChart" style="width:100%;max-width:700px; height:420px;"></canvas>
                                                     </div>
-                                                    <div class="col">
-                                                        <canvas id="myCharti" style="width:100%;max-width:700px; height:420px;"></canvas>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -236,72 +233,28 @@
 				datasets: [{
 					label: 'Grafik Pembayaran Pinjaman',
 					data: [12, 19, 3, 23, 2, 3,12, 32, 3, 23, 2, 3],
-					backgroundColor: [
-					'rgba(255, 99, 132, 0.2)',
-					'rgba(54, 162, 235, 0.2)',
-					'rgba(255, 206, 86, 0.2)',
-					'rgba(75, 192, 192, 0.2)',
-					'rgba(153, 102, 255, 0.2)',
-					'rgba(255, 159, 64, 0.2)',
-                    'rgba(255, 99, 132, 0.2)',
-					'rgba(54, 162, 235, 0.2)',
-					'rgba(255, 206, 86, 0.2)',
-					'rgba(75, 192, 192, 0.2)',
-					'rgba(153, 102, 255, 0.2)',
-					'rgba(255, 159, 64, 0.2)'
-					],
-					borderColor: [
-					'rgba(255,99,132,1)',
-					'rgba(54, 162, 235, 1)',
-					'rgba(255, 206, 86, 1)',
-					'rgba(75, 192, 192, 1)',
-					'rgba(153, 102, 255, 1)',
-					'rgba(255, 159, 64, 1)'
-					],
+					fill: true,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    pointBackgroundColor: 'rgb(255, 99, 132)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(255, 99, 132)',
 					borderWidth: 1
-				}]
-			},
-			options: {
-				scales: {
-					yAxes: [{
-						ticks: {
-							beginAtZero:true
-						}
-					}]
-				}
-			}
-        });
-        const myCharti = new Chart("myCharti", {
-            type: "line",
-            data: {
-				labels: ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"],
-				datasets: [{
-					label: 'Grafik Pembayaran Simpanan Wajib',
-					data: [12, 32, 3, 23, 2, 3,12, 32, 3, 23, 2, 3],
-					backgroundColor: [
-					'rgba(255, 99, 132, 0.2)',
-					'rgba(54, 162, 235, 0.2)',
-					'rgba(255, 206, 86, 0.2)',
-					'rgba(75, 192, 192, 0.2)',
-					'rgba(153, 102, 255, 0.2)',
-					'rgba(255, 159, 64, 0.2)',
-                    'rgba(255, 99, 132, 0.2)',
-					'rgba(54, 162, 235, 0.2)',
-					'rgba(255, 206, 86, 0.2)',
-					'rgba(75, 192, 192, 0.2)',
-					'rgba(153, 102, 255, 0.2)',
-					'rgba(255, 159, 64, 0.2)'
-					],
-					borderColor: [
-					'rgba(255,99,132,1)',
-					'rgba(54, 162, 235, 1)',
-					'rgba(255, 206, 86, 1)',
-					'rgba(75, 192, 192, 1)',
-					'rgba(153, 102, 255, 1)',
-					'rgba(255, 159, 64, 1)'
-					],
+				},
+                {
+                    label: 'Grafik Pembayaran Simpanan Wajib',
+					data: [4, 12, 53, 23, 2, 3,1, 32, 36, 3, 21, 33],
+                    fill: true,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgb(54, 162, 235)',
+                    pointBackgroundColor: 'rgb(54, 162, 235)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(54, 162, 235)',
 					borderWidth: 1
-				}]
+                }
+            ]
 			},
 			options: {
 				scales: {
