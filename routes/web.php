@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/dashboard', 'App\Http\Controllers\MasterController@index');
+Route::get('/konten', 'App\Http\Controllers\MasterController@index');
 
 Route::resource('anggota', App\Http\Controllers\RegistUserController::class);
 Route::resource('add_anggota', App\Http\Controllers\AddAnggotaController::class);
@@ -102,3 +102,5 @@ Route::resource('koreksi_simpanan', App\Http\Controllers\KoreksiDataController::
 Route::resource('koreksi_tabungan', App\Http\Controllers\KoreksiTabunganController::class);
 Route::resource('koreksi_kredit', App\Http\Controllers\KoreksiKreditController::class);
 Route::resource('koreksi_bukubesar', App\Http\Controllers\KoreksiBukuBesarController::class);
+Route::resource('koreksi_transaksi', App\Http\Controllers\KoreksiTransaksiController::class);
+Route::resource('/', App\Http\Controllers\DashboardController::class);
